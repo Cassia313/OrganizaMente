@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    background-color: #800080;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    z-index: 1;
+}
+
+.retangulo-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;             /* cobre 30% da largura da tela */
+    height: 100%;           /* altura total da tela */
+    background-color: #dc28dc; /* roxo claro */
+    z-index: 0;             /* fica atrás dos outros elementos */
+}
+
+.rotina-container {
+    display: flex;
+    flex-direction: column; /* empilha verticalmente */
+    gap: 15px; /* espaço entre os retângulos */
+    padding: 20px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.retangulo-branco {
+    background-color: white;
+    width: 400px; /*largura*/
+    height: 50px;/*altura*/
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-retangulo {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+header h1 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 43px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -5px;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.textos {
+    text-align: left;
+    color: rgb(0, 0, 0); 
+}
+
+.textos h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 12px;
+}
+
+footer img {
+    width: 280px;
+}
+
+.canto-esquerdo {
+    max-width: 300px;
+    position: relative; top: 5px;}
+
+.canto-direito {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
