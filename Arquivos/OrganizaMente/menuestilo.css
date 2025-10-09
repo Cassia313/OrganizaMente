@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
     background-color: #800080;
 }
 
@@ -25,39 +24,43 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%;             /* cobre 30% da largura da tela */
-    height: 100%;           /* altura total da tela */
-    background-color: #dc28dc; /* roxo claro */
-    z-index: 0;             /* fica atrás dos outros elementos */
+    width: 30%;
+    height: 100%;
+    background-color: #dc28dc;
+    z-index: 0;
 }
 
 .rotina-container {
     display: flex;
-    flex-direction: column; /* empilha verticalmente */
-    gap: 15px; /* espaço entre os retângulos */
+    flex-direction: column;
+    gap: 15px;
     padding: 20px;
     margin-top: 10px;
     position: relative;
     z-index: 1;
 }
 
+/* Estilo atualizado para os botões */
 .retangulo-branco {
     background-color: white;
-    width: 400px; /*largura*/
-    height: 50px;/*altura*/
+    width: 400px;
+    height: 50px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.texto-retangulo {
     color: black;
     font-weight: bold;
     font-size: 16px;
-    text-align: center;
-    padding: 0 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.retangulo-branco:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
 }
 
 header h1 {
@@ -105,7 +108,9 @@ footer img {
 
 .canto-esquerdo {
     max-width: 300px;
-    position: relative; top: 5px;}
+    position: relative;
+    top: 5px;
+}
 
 .canto-direito {
     text-align: center;
