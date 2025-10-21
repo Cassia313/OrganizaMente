@@ -6,3 +6,6 @@ def index(request):
 
 def master(request):
     return render(request, 'master.html')
+
+def master(request):
+    return render(request, 'master.html')
