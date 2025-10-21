@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #800080;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    z-index: 1;
+}
+
+.retangulo-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #dc28dc;
+    z-index: 0;
+}
+
+.rotina-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo atualizado para os botões */
+.retangulo-branco {
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.retangulo-branco:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+}
+
+header h1 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 43px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -5px;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.textos {
+    text-align: left;
+    color: rgb(0, 0, 0); 
+}
+
+.textos h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 12px;
+}
+
+footer img {
+    width: 280px;
+}
+
+.canto-esquerdo {
+    max-width: 300px;
+    position: relative;
+    top: 5px;
+}
+
+.canto-direito {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}

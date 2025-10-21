@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizamente</title>
+
+    <!-- importar fonte de letra e css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="textos">
+            <h1>Organizamente</h1>
+            <p>menos distração e mais ação!</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Aqui vai vir o conteúdo do site caso houver, se não, não precisará colocar nada-->
+    </main>
+
+    <footer>
+        <div class="canto-esquerdo">
+            <img src="{% static 'img/if-santacruz-logo.png' %}" alt="logo-IFRN">
+        </div>
+        <div class="canto-direito">
+            <p>Orientadores: Adriana Quintino</p>
+            <p>Co-orientadores: Marcelo Figueiredo</p>
+        </div>
+    </footer>
+</body>
+
+</html>
