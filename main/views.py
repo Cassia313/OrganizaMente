@@ -7,5 +7,8 @@ def index(request):
 def master(request):
     return render(request, 'master.html')
 
-def master(request):
-    return render(request, 'master.html')
+def desenvolvedores(request):
+    return render(request, 'desenvolvedores.html')
+
+def ciclodosono(request):
+    return render(request, 'ciclodosono.html')

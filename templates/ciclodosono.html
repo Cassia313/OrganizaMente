@@ -1,0 +1,28 @@
+{% extends "master.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/sono.css' %}">
+{% endblock css %} 
+{% block main %}
+    <div class="container">
+        <h2>Digite o horário que você vai dormir:</h2>
+        <input type="time" id="horaSono">
+
+        <button onclick="calcular()">Calcular</button>
+
+        <h3>Para ter um sono revigorante, você precisa acordar de:</h3>
+
+        <div class="result" id="resultados">
+            <div class="hora verde"></div>
+            <div class="hora amarela"></div>
+            <div class="hora vermelha"></div>
+        </div>
+
+        <p class="explicacao">
+            Cada ciclo de sono dura cerca de <b>1h30</b>. 
+            É melhor acordar ao final de um ciclo para evitar cansaço e sonolência ao levantar.
+        </p>
+    </div>
+
+    <script src="{% static "js/sono.js" %}"></script>
+    {% endblock main %}
