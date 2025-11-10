@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from main.views import index,master,desenvolvedores,ciclodosono
-
+from main.views import index, create
 
 urlpatterns = [
+    path('creat', create, name='create'),
     path('admin/', admin.site.urls),
     path('', index),
     path('master', master,name='master'),
