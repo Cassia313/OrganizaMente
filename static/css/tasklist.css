@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6a0dad; /* Roxo de fundo */
+    color: white;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .container {
+    padding: 20px;
+    }
+    
+    .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    }
+    
+    .card {
+    background: #4b007d;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    margin: 5px;
+    }
+    
+    h2 {
+    margin-top: 0;
+    }
+    
+    .prioridades {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    }
+    
+    .barra {
+    height: 15px;
+    border-radius: 5px;
+    }
+    
+    .urgente { background: #ff4444; width: 60%; }
+    .alta { background: #ff8800; width: 50%; }
+    .media { background: #ffcc00; width: 40%; }
+    .baixa { background: #99ff99; width: 70%; }
+    
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #4b007d;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+    
+    table th, table td {
+    border: 1px solid #6a0dad;
+    padding: 10px;
+    text-align: center;
+    }
+    
+    table th {
+    background: #5b0099;
+    }
+    
+    input, select {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    }
+    
+    .btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ffcc00;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    }
