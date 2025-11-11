@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from main.models import Usuario
+from main.models import Dicas
 
 # Create your views here.
 def Create(request):
     return render(request, 'form.html')
 def index(request):
-    lista = Usuario.objectes.all()
-    return render(request, 'menudenavegacao.html', {"lista": lista})
+    dicas = Dicas.objects.all()
+    return render(request, 'menudenavegacao.html',{'dicas': dicas})
 
 def master(request):
     return render(request, 'master.html')
