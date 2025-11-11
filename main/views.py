@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from main.models import Usuario
+
 from main.models import Dicas
 
 # Create your views here.
