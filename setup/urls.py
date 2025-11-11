@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from main.views import index,master,desenvolvedores,ciclodosono
+from main.views import index,master,desenvolvedores,ciclodosono, tasklist
 
 urlpatterns = [
     
@@ -25,5 +25,6 @@ urlpatterns = [
     path('master', master,name='master'),
     path('desenvolvedores', desenvolvedores,name='desenvolvedores'),
     path('ciclodosono', ciclodosono,name='ciclodosono'),
+    path('tasklist', tasklist,name='tasklist'),
     # path('',)
 ]

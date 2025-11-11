@@ -1,0 +1,72 @@
+{% extends "master.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="tasklist.css"> 
+{% endblock %}
+{% block main %}
+<div class="container">
+<!-- TOPO -->
+<div class="top">
+<div class="card">
+<h2>Minhas Tarefas!</h2>         
+<p>Feito: <span id="feito">0</span>/<span id="total">0</span></p>
+</div>
+<div class="card">
+<h3>Destaques:</h3>
+<p>Hoje</p>
+<p>Amanhã</p>
+<p>Atrasadas</p>
+</div>
+<div class="card">
+<h3>Prioridades</h3>
+<div class="prioridades">
+<div class="barra urgente"></div>
+<div class="barra alta"></div>
+<div class="barra media"></div>
+<div class="barra baixa"></div>
+</div>
+</div>
+</div>
+
+<!-- LISTA DE TAREFAS -->
+<h3>Lista de Tarefas</h3>
+<table id="tabelaTarefas">
+  <thead>
+    <tr>
+      <th>Tarefa</th>
+      <th>Categoria</th>
+      <th>Prioridade</th>
+      <th>Data de Início</th>
+      <th>Repetição</th>
+      <th>Feito</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<!-- FORMULÁRIO DE ADIÇÃO -->
+<h3>Adicionar Nova Tarefa</h3>
+<input type="text" id="tarefa" placeholder="Nome da tarefa">
+<input type="text" id="categoria" placeholder="Categoria">
+<select id="prioridade">
+  <option>Urgente</option>
+  <option>Alta</option>
+  <option>Média</option>
+  <option>Baixa</option>
+</select>
+<input type="date" id="data">
+<select id="repeticao">
+  <option>Nenhuma</option>
+  <option>Diária</option>
+  <option>Semanal</option>
+  <option>Mensal</option>
+</select>
+<button class="btn" onclick="adicionarTarefa()">Adicionar</button>
+
+
+</div>
+
+</body>
+</html>
+<script src="{% static "js/tasklist.js" %}"></script>
+{% endblock main %}

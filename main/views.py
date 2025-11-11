@@ -17,3 +17,6 @@ def desenvolvedores(request):
 
 def ciclodosono(request):
     return render(request, 'ciclodosono.html')
+
+def tasklist(request):
+    return render(request, 'tasklist.html')
