@@ -61,3 +61,37 @@ footer img {
     font-size: 15px;
     padding: 10px;
 }
+
+.rotina-container{
+    /* display: none; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding-top: 10rem;
+    background-color:#d115d199 ;
+    z-index: 2;
+}
+
+.rotina-container > a {
+    display: block;
+    background-color: antiquewhite;
+    
+}
+
+.retangulo-branco {
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}

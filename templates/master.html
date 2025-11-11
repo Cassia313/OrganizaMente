@@ -13,7 +13,7 @@
     
     <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
     {% block css %}{% endblock css %}
-    {% comment %} <link rel="stylesheet" href="{% static 'css/meuestilo.css' %}"> {% endcomment %}
+    {% comment %} <link rel="stylesheet" href="{% static 'css/menuestilo.css' %}"> {% endcomment %}
   
 </head>
 
@@ -22,6 +22,16 @@
         <div class="menu">
             <i class="fa-solid fa-bars"></i>
         </div>
+        <section class="rotina-container">
+            <a href="{% url 'master' %}">Master</a>
+            <a class="retangulo-branco">Minha conta</a>
+            <a class="retangulo-branco">Dicas sobre minha rotina e hábitos</a>
+            <a class="retangulo-branco">Saúde: cálculo imc</a>
+            <a class="retangulo-branco">Meu cronograma</a>
+            <a class="retangulo-branco">Task list</a>
+            <a href="{% url "ciclodosono" %}">Ciclo do sono</a>
+            <a href = "{% url "desenvolvedores" %}">Sobre os desenvolvedores</a>
+        </section>
 
         <div class="textos">
             <h1>Organizamente</h1>
