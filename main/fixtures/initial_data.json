@@ -1,0 +1,111 @@
+
+[
+    {
+      "model": "main.Dicas",
+      "pk": 1,
+      "fields": {
+        "dicaTitulo": "Entenda porque você procrastina",
+        "textoDica": "Procrastinar não é apenas preguiça; é um mecanismo psicológico ligado ao desconforto, ansiedade ou medo de falhar. Muitas vezes buscamos distrações que oferecem recompensas imediatas. Entender a raiz da procrastinação — perfeccionismo, insegurança ou falta de clareza — é o primeiro passo para mudar. A procrastinação pode surgir por falta de atenção causada por estímulos externos, como notificações ou interrupções. Reconhecer esses fatores ajuda a agir com mais consciência e criar hábitos saudáveis. Esta é a primeira dica, mas as demais aprofundam diferentes maneiras de melhorar seu rendimento, estudos, trabalho e até descanso.",
+        "image": ""
+      }
+    },
+    {
+      "model": "main.Dicas",
+      "pk": 2,
+      "fields": {
+        "dicaTitulo": "Metodo Pomodoro",
+        "textoDica": "O método Pomodoro é uma técnica de gestão do tempo criada por Francesco Cirillo. Consiste em ciclos de 25 minutos de foco seguidos de 5 minutos de pausa. Após quatro ciclos, faz-se uma pausa maior de 15 a 30 minutos. A técnica ajuda a manter o foco, reduzir distrações e evitar a fadiga mental. Nas pequenas pausas, é ideal beber água, alongar ou descansar a mente. O método funciona porque treina o cérebro a trabalhar em blocos curtos e produtivos, tornando mais fácil iniciar tarefas e combater a procrastinação.",
+        "image": ""
+      }
+    },
+    {
+      "model": "main.Dicas",
+      "pk": 3,
+      "fields": {
+        "dicaTitulo": "Aprenda com seus erros",
+        "textoDica": "Errar faz parte do aprendizado. Em vez de se frustrar, enxergue o erro como uma oportunidade de crescimento. A autocrítica deve ser equilibrada: reconhecer dificuldades é saudável, mas se culpar em excesso atrapalha. Sempre que errar, identifique a causa — falta de atenção, conhecimento ou pressa — e use métodos como vídeo-aulas, livros e questões para reforçar o conteúdo. Refaça exercícios e explique o que aprendeu a alguém para fixar melhor. Desenvolver uma relação saudável com os erros é essencial, pois os melhores estudantes não são os que acertam sempre, mas os que sabem o que fazer quando erram. Respeite seu ritmo e lembre-se: o importante é aprender, não ser perfeito.",
+        "image": ""
+      }
+    },
+    {
+      "model": "main.Dicas",
+      "pk": 4,
+      "fields": {
+        "dicaTitulo": "Encontre recompensas",
+        "textoDica": "Associar tarefas a pequenas recompensas torna o processo mais agradável e ajuda o cérebro a criar uma relação positiva com o estudo. Depois de concluir uma atividade, você pode assistir um episódio, comer algo que gosta, ouvir música, pintar ou sair com um amigo. O equilíbrio é essencial: recompensas devem ser pequenas e não exageradas, feitas ocasionalmente. Com o tempo, essa associação positiva torna o hábito mais natural e constante. Ensinar o cérebro de que o esforço vale a pena é a chave.",
+        "image": ""
+      }
+    },
+    {
+      "model": "main.Dicas",
+      "pk": 5,
+      "fields": {
+        "dicaTitulo": "Constância nos estudos",
+        "textoDica": "A constância é essencial para aprender de verdade. Estudar muito em um dia e nada nos outros não funciona. Comece criando um plano realista que se encaixe na sua rotina. Use listas e ferramentas de organização para visualizar tarefas e manter o foco. Estude em um ambiente adequado e silencioso, estabeleça metas pequenas e alcançáveis e respeite seu próprio ritmo. Use técnicas como Pomodoro e priorize o descanso. Revisar com frequência é fundamental para fixar conteúdos. A regularidade diária, mesmo que em pequenas doses, traz resultados duradouros.",
+        "image": ""
+      }
+    },
+    {
+      "model": "main.Dicas",
+      "pk": 6,
+      "fields": {
+        "dicaTitulo": "Regra dos 5 minutos",
+        "textoDica": "A Regra dos 5 Minutos consiste em se comprometer a realizar uma tarefa por apenas cinco minutos. É uma técnica poderosa para combater a procrastinação porque reduz a resistência inicial. Cinco minutos parecem fáceis, e ao começar, o cérebro tende a continuar. A técnica diminui a ansiedade, quebra a inércia e prova que o mais difícil não é continuar, e sim começar. Um pequeno começo é muito melhor do que nenhum.",
+        "image": ""
+      }
+    },
+    {
+      "model": "main.Dicas",
+      "pk": 7,
+      "fields": {
+        "dicaTitulo": "Lista de tarefas",
+        "textoDica": "Criar uma lista de tarefas diária ajuda a organizar a rotina, priorizar atividades e evitar esquecimentos. Uma task list funciona como um guia claro do que precisa ser feito e reduz o estresse mental causado pelo acúmulo de pendências. Ela também ajuda a dividir o tempo de forma inteligente e incluir momentos de descanso. Marcar o que já foi concluído traz motivação e sensação real de progresso. Nosso sistema de task list foi criado para tornar seu dia mais leve, organizado e produtivo.",
+        "image": ""
+      }
+    },
+    {
+      "model": "main.Dicas",
+      "pk": 8,
+      "fields": {
+        "dicaTitulo": "Criação de hábitos",
+        "textoDica": "Segundo o livro 'Hábitos Atômicos', de James Clear, mudanças duradouras vêm de pequenas melhorias diárias. Ele propõe quatro leis: tornar o hábito óbvio, atraente, fácil e satisfatório. Pequenos comportamentos repetidos moldam sua identidade. Um hábito leva cerca de 60 dias para se consolidar, e não nasce de um dia para o outro. O segredo é focar em quem você quer se tornar, e não apenas nos resultados.",
+        "image": ""
+      }
+    },
+    {
+      "model": "main.Dicas",
+      "pk": 9,
+      "fields": {
+        "dicaTitulo": "Cultivar o corpo",
+        "textoDica": "O corpo influencia diretamente o foco, a memória e o rendimento. Alimentação adequada, sono de qualidade e exercícios físicos são fundamentais para estudar bem. Comer alimentos ricos em ômega-3, ferro e vitaminas ajuda na atenção. Dormir entre 7 e 9 horas permite que o cérebro consolide o aprendizado. Exercícios diários de 20 a 30 minutos melhoram disposição e reduzem o estresse. Cuidar do corpo é cuidar da mente: um não funciona bem sem o outro.",
+        "image": ""
+      }
+    },
+    {
+      "model": "main.Dicas",
+      "pk": 10,
+      "fields": {
+        "dicaTitulo": "Quais são os maiores problemas",
+        "textoDica": "A procrastinação traz consequências sérias: acúmulo de tarefas, estresse, ansiedade e culpa. Quando adiamos algo, a tarefa não desaparece — ela cresce e causa ainda mais resistência. Isso prejudica produtividade, qualidade das entregas e até relacionamentos, transmitindo a impressão de irresponsabilidade. A longo prazo, afeta estudos, trabalho e saúde emocional. Entender esses impactos é essencial para começar a mudar.",
+        "image": ""
+      }
+    },
+    {
+      "model": "main.Dicas",
+      "pk": 11,
+      "fields": {
+        "dicaTitulo": "Como dizer 'não'",
+        "textoDica": "Dizer 'não' às distrações é um desafio, mas essencial para estudar com foco. Comece definindo metas claras e um objetivo bem estruturado. Crie um ambiente adequado: silencioso, organizado e longe do celular. Organize seus estudos com listas e cronogramas e inclua pausas programadas. Equilibre estudo e lazer para manter bem-estar. Foco é uma escolha diária: não significa abrir mão de tudo, mas proteger aquilo que você quer conquistar.",
+        "image": ""
+      }
+    },
+    {
+      "model": "main.Dicas",
+      "pk": 12,
+      "fields": {
+        "dicaTitulo": "Rotina flex",
+        "textoDica": "Para criar uma rotina flexível e produtiva, identifique o que é essencial, o que é importante e o que apenas toma seu tempo. Métodos como time blocking, a lista das três tarefas do dia e o Pomodoro ajudam a organizar o dia de forma leve. Ajuste sua rotina semanalmente, observando o que funcionou e o que causou sobrecarga. Um ambiente confortável também é essencial: evite distrações, mantenha organização, busque conforto e use estímulos positivos como óleos essenciais ou música calma.",
+        "image": ""
+      }
+    }
+  ]
