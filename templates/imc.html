@@ -1,0 +1,23 @@
+{% extends "master.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/imc.css' %}"> 
+{% endblock %}
+{% block main %}
+
+    <label for="altura">Digite sua altura</label>
+    <input type="number" id="altura" step="0.01" placeholder="Ex: 1.70">
+
+    <label for="peso">Digite seu peso</label>
+    <input type="number" id="peso" step="0.1" placeholder="Ex: 65.5">
+
+    <button onclick="calcularIMC()">Calcular IMC</button>
+
+    <div class="resultado">
+        <p id="resultadoIMC">SEU IMC É: XXX</p>
+        <p id="mensagem">Isso significa que você está xxxx</p>
+    </div>
+
+
+    <script src="{% static "js/imc.js" %}"></script>
+    {% endblock main %}

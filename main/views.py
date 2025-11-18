@@ -20,3 +20,7 @@ def ciclodosono(request):
 
 def tasklist(request):
     return render(request, 'tasklist.html')
+
+
+def imc(request):
+    return render(request, 'imc.html')

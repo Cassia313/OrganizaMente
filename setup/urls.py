@@ -18,7 +18,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
-from main.views import index,master,desenvolvedores,ciclodosono, tasklist
+from main.views import index,master,desenvolvedores,ciclodosono, tasklist, imc
 
 urlpatterns = [
     
@@ -28,6 +28,7 @@ urlpatterns = [
     path('desenvolvedores', desenvolvedores,name='desenvolvedores'),
     path('ciclodosono', ciclodosono,name='ciclodosono'),
     path('tasklist', tasklist,name='tasklist'),
+    path('imc', imc,name='imc'),
     # path('',)
 ]
 
