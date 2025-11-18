@@ -24,7 +24,6 @@ urlpatterns = [
     
     path('admin/', admin.site.urls),
     path('', index),
-    path('master', master,name='master'),
     path('desenvolvedores', desenvolvedores,name='desenvolvedores'),
     path('ciclodosono', ciclodosono,name='ciclodosono'),
     path('tasklist', tasklist,name='tasklist'),
