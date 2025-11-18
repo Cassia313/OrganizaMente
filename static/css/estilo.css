@@ -63,17 +63,20 @@ footer img {
 }
 
 .rotina-container{
-    /* display: none; */
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
+    width: 100%;
     padding-top: 10rem;
     background-color:#d115d199 ;
     z-index: 2;
 }
-
-.rotina-container > a {
+.rotina-container > div{
+    width: 400px;
+}
+.rotina-container  a {
     display: block;
     background-color: antiquewhite;
     
@@ -81,17 +84,14 @@ footer img {
 
 .retangulo-branco {
     background-color: white;
-    width: 400px;
-    height: 50px;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem 0;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: black;
     font-weight: bold;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
