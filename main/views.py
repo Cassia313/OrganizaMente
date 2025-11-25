@@ -6,11 +6,12 @@ from main.models import Dicas
 def Create(request):
     return render(request, 'form.html')
 def index(request):
-    dicas = Dicas.objects.all()
-    return render(request, 'menudenavegacao.html',{'dicas': dicas})
+    dicas = Dicas.objects.values("id","dicaTitulo")
+    return render(request, 'dicas.html',{'dicas': dicas})
 
-def master(request):
-    return render(request, 'master.html')
+def dica(request,id):
+    dica = Dicas.objects.get(id=id)
+    return render(request, 'dica.html',{"dica": dica})
 
 def desenvolvedores(request):
     return render(request, 'desenvolvedores.html')

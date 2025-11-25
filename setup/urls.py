@@ -18,16 +18,17 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
-from main.views import index,master,desenvolvedores,ciclodosono, tasklist, imc
+from main.views import index,desenvolvedores,ciclodosono, tasklist, imc, dica
 
 urlpatterns = [
     
     path('admin/', admin.site.urls),
-    path('', index),
+    path('', index,name='index'),
     path('desenvolvedores', desenvolvedores,name='desenvolvedores'),
     path('ciclodosono', ciclodosono,name='ciclodosono'),
     path('tasklist', tasklist,name='tasklist'),
     path('imc', imc,name='imc'),
+    path('dica/<int:id>', dica,name='dica'),
     # path('',)
 ]
 

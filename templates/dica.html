@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+{% load static %}
+{% block css %}
+{% endblock %}
+{% block main %}
+
+
+        <div>
+            <h2>
+                {{dica.dicaTitulo}}
+            </h2>
+
+            <p>
+                {{dica.textoDica}}
+            </p>
+            <img src="{% static dica.image%}" alt="{{dica.dicaTitulo}}">
+        </div>
+
+{% endblock main %}
