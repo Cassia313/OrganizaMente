@@ -1,19 +1,21 @@
 {% extends "master.html" %}
 {% load static %}
 {% block css %}
+<link rel="stylesheet" href="{% static 'css/dica.css' %}">
 {% endblock %}
 {% block main %}
 
 
-        <div>
-            <h2>
-                {{dica.dicaTitulo}}
-            </h2>
-
-            <p>
-                {{dica.textoDica}}
-            </p>
-            <img src="{% static dica.image%}" alt="{{dica.dicaTitulo}}">
-        </div>
+       <div class="container-dica">
+    <div class="col-texto">
+        <h2>{{ dica.dicaTitulo }}</h2>
+        <p>{{ dica.textoDica }}</p>
+    </div>
+    <div class="col-imagem {% if not dica.image %}empty{% endif %}">
+        {% if dica.image %}
+            <img src="{% static dica.image %}" alt="{{ dica.dicaTitulo }}">
+        {% endif %}
+    </div>
+</div>
 
 {% endblock main %}
