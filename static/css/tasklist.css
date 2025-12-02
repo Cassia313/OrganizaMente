@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #6a0dad; /* Roxo de fundo */
+    background-color: #6d007a; /* Roxo de fundo */
     color: white;
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ body {
     }
     
     .card {
-    background: #4b007d;
+    background: #6d007a;
     padding: 15px;
     border-radius: 10px;
     flex: 1;
@@ -47,19 +47,19 @@ body {
     table {
     width: 100%;
     border-collapse: collapse;
-    background: #4b007d;
+    background: #6d007a;
     border-radius: 10px;
     overflow: hidden;
     }
     
     table th, table td {
-    border: 1px solid #6a0dad;
+    border: 1px solid #6d007a;
     padding: 10px;
     text-align: center;
     }
     
     table th {
-    background: #5b0099;
+    background: #6d007a;
     }
     
     input, select {

@@ -1,18 +1,22 @@
 {% extends "master.html" %}
 {% load static %}
 {% block css %}
+    <link rel="stylesheet" href="{% static 'css/dicas.css' %}">
 {% endblock %}
 {% block main %}
-{% for dica in dicas %}
-<a href="{% url "dica" dica.id %}">
-    <section>
-        <h3> 
-            {{dica.dicaTitulo}}
-        </h3>
-        <p>
-            {{dica.dicaTitulo}}
-        </p>
-    </section>
-</a>
-{% endfor %}
+
+    <div class="container"> {# Novo container para o grid #}
+        {% for dica in dicas %}
+            <a href="{% url "dica" dica.id %}" class="card"> {# Adicionado classe 'card' e removido a section #}
+                <div class="card-title"> {# Novo div para o título com classe 'card-title' #}
+                    {{ dica.dicaTitulo }}
+                </div>
+                <div class="card-text"> {# Novo div para o texto descritivo com classe 'card-text' #}
+                    {# Notei que você usou dicaTitulo duas vezes. Se quiser usar o texto descritivo, use dica.textoDica #}
+                    {{ dica.textoDica }}
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+
 {% endblock main %}

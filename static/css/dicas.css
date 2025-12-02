@@ -1,0 +1,70 @@
+/* Estilos gerais para o body, assumindo que master.html cuida do básico */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #6d007a; /* Fundo roxo escuro, como na imagem */
+    color: #d6b8ff; /* Cor padrão do texto lilás claro */
+    margin: 0;
+    padding: 40px; /* Espaçamento ao redor do conteúdo */
+    display: flex;
+    justify-content: center; /* Centraliza o container principal */
+}
+
+/* Container que organiza as dicas em grid */
+.container {
+    display: grid;
+    /* Cria colunas responsivas: minimum 280px, expande para ocupar espaço */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px; /* Espaço entre os cards */
+    max-width: 1200px; /* Largura máxima do grid */
+    width: 100%; /* Ocupa a largura disponível até o max-width */
+}
+
+/* Estilo para cada card (a <section> dentro do loop) */
+.card {
+    background-color: #6d007a; /* Roxo médio para os cards */
+    border-radius: 12px; /* Cantos arredondados */
+    padding: 20px 24px; /* Espaçamento interno do card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente dentro do card */
+    justify-content: flex-start; /* Alinha o conteúdo no topo do card */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+.card:hover {
+    background-color: #6d007a; /* Roxo um pouco mais claro ao passar o mouse */
+    box-shadow: 0 6px 18px #6d007a(75, 39, 166, 0.8); /* Sombra mais pronunciada no hover */
+}
+
+/* Estilo para o título principal dentro do card */
+.card-title {
+    font-size: 1.5rem; /* Tamanho do título */
+    font-weight: 700; /* Negrito */
+    color: #c9a7ff; /* Cor do título (roxo mais claro) */
+    margin-bottom: 12px; /* Espaço abaixo do título */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 1.5px; /* Espaçamento entre letras */
+    text-align: center; /* Centraliza o título */
+}
+
+/* Estilo para o texto descritivo dentro do card */
+.card-text {
+    font-size: 1rem; /* Tamanho do texto descritivo */
+    color: #d6b8ff; /* Cor do texto descritivo */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    text-align: center; /* Centraliza o texto descritivo */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 600px) {
+    body {
+        padding: 20px; /* Reduz o padding em telas menores */
+    }
+    .card-title {
+        font-size: 1.3rem; /* Título um pouco menor em telas pequenas */
+    }
+    .card-text {
+        font-size: 0.9rem; /* Texto descritivo um pouco menor */
+    }
+}
