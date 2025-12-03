@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    background-color: #800080;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #000; 
+}
+
+header h1 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 43px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -5px;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 12px;
+}
+
+footer img {
+    width: 280px;
+}
+
+.canto-esquerdo {
+    max-width: 300px;
+    position: relative; top: 5px;}
+
+.canto-direito {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+.tabela-horarios {
+    width: 95%; /* aumenta largura */
+    max-width: 1200px; /* deixa ela maior em telas grandes */
+    margin: 40px auto;
+    background: #800080;
+    padding: 30px; /* mais espaçamento interno */
+    border-radius: 12px;
+    min-height: 60vh; /* ocupa mais altura da tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabela-horarios table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 16px; /* fonte maior */
+    color: white;
+}
+
+.tabela-horarios th,
+.tabela-horarios td {
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 18px; /* células maiores */
+}
+
+.tabela-horarios th {
+    background: #800080;
+    font-weight: bold;
+    font-size: 18px;
+}
+td[contenteditable="true"] {
+    cursor: text;
+}
+
+td[contenteditable="true"]:focus {
+    outline: 2px solid #ffcc00;
+    background: rgba(255, 255, 255, 0.15);
+}
